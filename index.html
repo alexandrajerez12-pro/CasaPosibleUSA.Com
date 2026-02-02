@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dinorah Nation - Tu aliada en bienes raíces. Encuentra el hogar que cuenta tu historia.">
+    
+    <title>Casa Posible USA | Bienes Raíces de Lujo</title>
+    
+    <!-- Google Fonts - Tipografía elegante -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Nuestros estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- =============================================
+         HEADER - Logo, navegación y botón de contacto
+         ============================================= -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            
+            <!-- Logo -->
+                <a href="#" class="header__logo">
+                <img src="assets/images/logo.png" alt="Casa Posible USA" class="logo__image">
+            </a>
+            
+            <!-- Navegación principal -->
+            <nav class="header__nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#propiedades" class="nav__link">Propiedades</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#sobre-mi" class="nav__link">Sobre Mí</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacto" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Botón de contacto (visible en desktop) -->
+            <a href="#contacto" class="header__cta btn btn--primary">
+                Contáctame
+            </a>
+            
+            <!-- Botón hamburguesa para móvil -->
+            <button class="header__menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- =============================================
+         HERO - Imagen impactante con texto y buscador
+         ============================================= -->
+    <section class="hero" id="inicio">
+        <div class="hero__overlay"></div>
+        <div class="container hero__container">
+            
+            <!-- Contenido principal del hero -->
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Encuentra el hogar que <span class="text-accent">cuenta tu historia</span>
+                </h1>
+                <p class="hero__subtitle">
+                    Propiedades exclusivas que reflejan tu estilo de vida
+                </p>
+            </div>
+            
+            <!-- Buscador simple -->
+            <div class="hero__search">
+                <form class="search-form" id="searchForm">
+                    <div class="search-form__group">
+                        <label for="searchLocation" class="search-form__label">Ubicación</label>
+                        <input 
+                            type="text" 
+                            id="searchLocation" 
+                            class="search-form__input" 
+                            placeholder="Ciudad o zona..."
+                        >
+                    </div>
+                    <div class="search-form__group">
+                        <label for="searchType" class="search-form__label">Tipo</label>
+                        <select id="searchType" class="search-form__select">
+                            <option value="">Todos</option>
+                            <option value="casa">Casa</option>
+                            <option value="departamento">Departamento</option>
+                            <option value="terreno">Terreno</option>
+                        </select>
+                    </div>
+                    <div class="search-form__group">
+                        <label for="searchBudget" class="search-form__label">Presupuesto</label>
+                        <select id="searchBudget" class="search-form__select">
+                            <option value="">Cualquiera</option>
+                            <option value="0-500000">Hasta $500,000</option>
+                            <option value="500000-1000000">$500,000 - $1,000,000</option>
+                            <option value="1000000+">Más de $1,000,000</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-form__btn btn btn--primary">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        Buscar
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Indicador de scroll -->
+        <div class="hero__scroll-indicator">
+            <span>Descubre más</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m6 9 6 6 6-6"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- =============================================
+         BIENVENIDA - Mensaje de impacto
+         ============================================= -->
+    <section class="welcome" id="bienvenida">
+        <div class="container">
+            
+            <!-- Pregunta de impacto -->
+            <div class="welcome__hero">
+                <h2 class="welcome__question">
+                    ¿Interesado en <span class="text-accent">Comprar</span> o <span class="text-accent">Vender</span> Casa?
+                </h2>
+                <p class="welcome__answer">
+                    ¡Está en el sitio correcto con información muy útil y sencilla para ayudarle a tomar el primer paso!
+                </p>
+            </div>
+            
+            <!-- Mensaje de bienvenida -->
+            <div class="welcome__message">
+                <div class="welcome__message-content">
+                    <h3 class="welcome__title">¡Bienvenido!</h3>
+                    <p>
+                        Gracias por visitar nuestra página, por favor siéntase en plena confianza de 
+                        contactarnos y permítanos el placer de poderle ayudar a comprar o a vender casa con 
+                        <strong>integridad, profesionalismo y esmero</strong>.
+                    </p>
+                </div>
+                
+                <!-- Destacado ITIN -->
+                <div class="welcome__itin-box">
+                    <div class="itin-box__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <div class="itin-box__content">
+                        <p class="itin-box__text">Infórmese aquí sobre cómo puede comprar su casa con <strong>ITIN</strong>.</p>
+                        <p class="itin-box__highlight">¡Sí se puede!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Título de servicios -->
+            <h3 class="services__title">¿Cómo podemos ayudarle?</h3>
+            
+            <!-- Grid de servicios -->
+            <div class="services__grid">
+                
+                <!-- Servicio 1: Venta de Casa -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <path d="M9 22V12h6v10"/>
+                        </svg>
+                    </div>
+                    <h4 class="service-card__title">Venta de Casa</h4>
+                    <p class="service-card__description">
+                        Casa Posible USA Real Estate por medio de Dinorah Nations le ayudará con este paso tan importante. 
+                        Nos esforzamos por brindarle a todos nuestros clientes un servicio en su propio idioma, 
+                        completamente profesional, humano, eficiente y honesto.
+                    </p>
+                    <a href="#propiedades" class="service-card__btn">Ver Casas en Venta</a>
+                </div>
+                
+                <!-- Servicio 2: Compra de Casa -->
+                <div class="service-card service-card--featured">
+                    <div class="service-card__badge">Popular</div>
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h4 class="service-card__title">Compra de Casa</h4>
+                    <p class="service-card__description">
+                        Le ayudaremos a conseguir la casa de sus sueños. Si le interesa recibir un listado de las casas 
+                        disponibles en las áreas de su preferencia, con todo gusto le proporcionaremos sin costo alguno 
+                        un listado actual y completamente detallado.
+                    </p>
+                    <a href="#contacto" class="service-card__btn">Más Información</a>
+                </div>
+                
+                <!-- Servicio 3: Préstamos ITIN -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="6" width="20" height="12" rx="2"/>
+                            <path d="M12 12h.01"/>
+                            <path d="M17 12h.01"/>
+                            <path d="M7 12h.01"/>
+                        </svg>
+                    </div>
+                    <h4 class="service-card__title">Préstamos Hipotecarios ITIN</h4>
+                    <p class="service-card__description">
+                        Si desea más información de cómo obtener un crédito financiero y todos los requisitos 
+                        para poder ser pre-calificado, contáctenos. Todo nuestro esfuerzo estará encaminado a 
+                        brindarle un servicio altamente profesional, íntegro y súper eficiente.
+                    </p>
+                    <a href="#contacto" class="service-card__btn">Más Información</a>
+                </div>
+                
+            </div>
+            
+            <!-- Mensaje final de compromiso -->
+            <div class="welcome__commitment">
+                <p>
+                    La compra o venta de una propiedad es algo que todos llegamos a hacer en nuestras vidas. 
+                    <strong>Casa Posible USA Real Estate</strong> por medio de <strong>Dinorah Nations</strong> 
+                    le ayudará con este paso tan importante.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- =============================================
+         PROPIEDADES - 3 tarjetas de ejemplo
+         ============================================= -->
+    <section class="properties" id="propiedades">
+        <div class="container">
+            
+            <!-- Encabezado de sección -->
+            <div class="section-header">
+                <span class="section-header__tag">Exclusivas</span>
+                <h2 class="section-header__title">Propiedades Destacadas</h2>
+                <p class="section-header__description">
+                    Descubre nuestra selección de propiedades premium cuidadosamente elegidas para ti
+                </p>
+            </div>
+            
+            <!-- Grid de propiedades -->
+            <div class="properties__grid">
+                
+                <!-- Tarjeta de propiedad 1 -->
+                <article class="property-card">
+                    <div class="property-card__image-wrapper">
+                        <img 
+                            src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&h=400&fit=crop" 
+                            alt="Casa moderna con piscina" 
+                            class="property-card__image"
+                        >
+                        <span class="property-card__badge">Destacada</span>
+                        <button class="property-card__favorite" aria-label="Agregar a favoritos">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="property-card__content">
+                        <div class="property-card__location">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Brandon, Mississippi</span>
+                        </div>
+                        <h3 class="property-card__title">Residencia Contemporánea con Jardín</h3>
+                        <div class="property-card__features">
+                            <span class="feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                </svg>
+                                450 m²
+                            </span>
+                            <span class="feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 4v16"/>
+                                    <path d="M2 8h18a2 2 0 0 1 2 2v10"/>
+                                    <path d="M2 17h20"/>
+                                    <path d="M6 8v9"/>
+                                </svg>
+                                4 Recámaras
+                            </span>
+                            <span class="feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/>
+                                    <line x1="10" x2="8" y1="5" y2="7"/>
+                                    <line x1="2" x2="22" y1="12" y2="12"/>
+                                    <line x1="7" x2="7" y1="19" y2="21"/>
+                                    <line x1="17" x2="17" y1="19" y2="21"/>
+                                </svg>
+                                3.5 Baños
+                            </span>
+                        </div>
+                        <div class="property-card__footer">
+                            <p class="property-card__price">$12,500,000 <span>MXN</span></p>
+                            <a href="#contacto" class="property-card__btn">Ver Detalles</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Tarjeta de propiedad 2 -->
+                <article class="property-card">
+                    <div class="property-card__image-wrapper">
+                        <img 
+                            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop" 
+                            alt="Penthouse de lujo" 
+                            class="property-card__image"
+                        >
+                        <span class="property-card__badge property-card__badge--new">Nueva</span>
+                        <button class="property-card__favorite" aria-label="Agregar a favoritos">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="property-card__content">
+                        <div class="property-card__location">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Madison, Mississippi</span>
+                        </div>
+                        <h3 class="property-card__title">Penthouse con Vista Panorámica</h3>
+                        <div class="property-card__features">
+                            <span class="feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                </svg>
+                                320 m²
+                            </span>
+                            <span class="feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 4v16"/>
+                                    <path d="M2 8h18a2 2 0 0 1 2 2v10"/>
+                                    <path d="M2 17h20"/>
+                                    <path d="M6 8v9"/>
+                                </svg>
+                                3 Recámaras
+                            </span>
+                            <span class="feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/>
+                                    <line x1="10" x2="8" y1="5" y2="7"/>
+                                    <line x1="2" x2="22" y1="12" y2="12"/>
+                                    <line x1="7" x2="7" y1="19" y2="21"/>
+                                    <line x1="17" x2="17" y1="19" y2="21"/>
+                                </svg>
+                                2.5 Baños
+                            </span>
+                        </div>
+                        <div class="property-card__footer">
+                            <p class="property-card__price">$8,900,000 <span>MXN</span></p>
+                            <a href="#contacto" class="property-card__btn">Ver Detalles</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Tarjeta de propiedad 3 -->
+                <article class="property-card">
+                    <div class="property-card__image-wrapper">
+                        <img 
+                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" 
+                            alt="Villa mediterránea" 
+                            class="property-card__image"
+                        >
+                        <span class="property-card__badge property-card__badge--sold">Vendida</span>
+                        <button class="property-card__favorite" aria-label="Agregar a favoritos">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="property-card__content">
+                        <div class="property-card__location">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Ridgeland, Mississippi</span>
+                        </div>
+                        <h3 class="property-card__title">Villa Estilo Mediterráneo</h3>
+                        <div class="property-card__features">
+                            <span class="feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                </svg>
+                                580 m²
+                            </span>
+                            <span class="feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 4v16"/>
+                                    <path d="M2 8h18a2 2 0 0 1 2 2v10"/>
+                                    <path d="M2 17h20"/>
+                                    <path d="M6 8v9"/>
+                                </svg>
+                                5 Recámaras
+                            </span>
+                            <span class="feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/>
+                                    <line x1="10" x2="8" y1="5" y2="7"/>
+                                    <line x1="2" x2="22" y1="12" y2="12"/>
+                                    <line x1="7" x2="7" y1="19" y2="21"/>
+                                    <line x1="17" x2="17" y1="19" y2="21"/>
+                                </svg>
+                                4 Baños
+                            </span>
+                        </div>
+                        <div class="property-card__footer">
+                            <p class="property-card__price">$18,750,000 <span>MXN</span></p>
+                            <a href="#contacto" class="property-card__btn">Ver Detalles</a>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+            
+            <!-- Botón ver más -->
+            <div class="properties__cta">
+                <a href="#" class="btn btn--outline">Ver Todas las Propiedades</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+         SOBRE MÍ - Información personal con foto
+         ============================================= -->
+    <section class="about" id="sobre-mi">
+        <div class="container about__container">
+            
+                    <!-- Imagen / Foto de perfil -->
+            <div class="about__image-wrapper">
+                <div class="about__image-frame">
+                    <!-- Foto de perfil de Dinorah -->
+                    <img src="assets/images/dinorah-profile.png" alt="Dinorah Nation - Agente de Bienes Raíces" class="about__image">
+                </div>
+                <!-- Decoración -->
+                <div class="about__decoration"></div>
+            </div>
+            
+            <!-- Contenido de texto -->
+            <div class="about__content">
+                <span class="section-header__tag">Conóceme</span>
+                <h2 class="about__title">Dinorah Nation</h2>
+                <p class="about__role">Tu Aliada en Bienes Raíces</p>
+                
+                <div class="about__text">
+                    <p>
+                        Soy <strong>Dinorah Nation</strong>, tu aliada en bienes raíces. Mi enfoque es entender 
+                        tu estilo de vida para conectar con la casa perfecta, garantizando un proceso 
+                        seguro y sin estrés.
+                    </p>
+                    <p>
+                        Con años de experiencia en el mercado inmobiliario, me especializo en crear 
+                        conexiones duraderas entre personas y propiedades que realmente reflejan 
+                        quiénes son.
+                    </p>
+                </div>
+                
+                <!-- Estadísticas -->
+                <div class="about__stats">
+                    <div class="stat">
+                        <span class="stat__number">150+</span>
+                        <span class="stat__label">Propiedades Vendidas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">98%</span>
+                        <span class="stat__label">Clientes Satisfechos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">10+</span>
+                        <span class="stat__label">Años de Experiencia</span>
+                    </div>
+                </div>
+                
+                <a href="#contacto" class="btn btn--primary">Trabajemos Juntos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+         FORMULARIO DE CONTACTO
+         ============================================= -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            
+            <!-- Encabezado de sección -->
+            <div class="section-header section-header--light">
+                <span class="section-header__tag">Contacto</span>
+                <h2 class="section-header__title">¿Listo para Encontrar tu Hogar?</h2>
+                <p class="section-header__description">
+                    Cuéntame sobre tu proyecto y juntos encontraremos la propiedad perfecta para ti
+                </p>
+            </div>
+            
+            <div class="contact__wrapper">
+                
+                <!-- Información de contacto -->
+                <div class="contact__info">
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>1(601) 497-7788</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@casaposibleusa.com</p>
+                            <p>dinorah@hgroupms.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Mississippi, USA</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Redes sociales -->
+                    <div class="contact__social">
+                        <a href="https://www.facebook.com/share/p/1J3Mjkfvqe/" class="social-link" aria-label="Facebook" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Formulario -->
+                <form class="contact__form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre Completo *</label>
+                            <input 
+                                type="text" 
+                                id="nombre" 
+                                name="nombre" 
+                                class="form-input" 
+                                placeholder="Tu nombre"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="tu@email.com"
+                                required
+                            >
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono" class="form-label">Teléfono *</label>
+                            <input 
+                                type="tel" 
+                                id="telefono" 
+                                name="telefono" 
+                                class="form-input" 
+                                placeholder="+52 (55) 1234-5678"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="interes" class="form-label">Tipo de Interés *</label>
+                            <select id="interes" name="interes" class="form-select" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="comprar">Comprar</option>
+                                <option value="vender">Vender</option>
+                                <option value="rentar">Rentar</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="presupuesto" class="form-label">Presupuesto Aproximado</label>
+                        <select id="presupuesto" name="presupuesto" class="form-select">
+                            <option value="">Selecciona un rango</option>
+                            <option value="menos-2m">Menos de $2,000,000</option>
+                            <option value="2m-5m">$2,000,000 - $5,000,000</option>
+                            <option value="5m-10m">$5,000,000 - $10,000,000</option>
+                            <option value="10m-20m">$10,000,000 - $20,000,000</option>
+                            <option value="mas-20m">Más de $20,000,000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje" 
+                            class="form-textarea" 
+                            rows="4" 
+                            placeholder="Cuéntame sobre tu proyecto o propiedad ideal..."
+                        ></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <span>Enviar Mensaje</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+         FOOTER
+         ============================================= -->
+    <footer class="footer">
+        <div class="container footer__container">
+            
+            <!-- Logo y descripción -->
+            <div class="footer__brand">
+                <a href="#" class="footer__logo">
+                    <img src="assets/images/logo.png" alt="Casa Posible USA" class="logo__image logo__image--footer">
+                </a>
+                <p class="footer__description">
+                    Tu aliada en bienes raíces. Conectando personas con hogares que cuentan historias.
+                </p>
+            </div>
+            
+            <!-- Links rápidos -->
+            <div class="footer__links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#propiedades">Propiedades</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- Servicios -->
+            <div class="footer__services">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#">Compra de Propiedades</a></li>
+                    <li><a href="#">Venta de Propiedades</a></li>
+                    <li><a href="#">Asesoría Inmobiliaria</a></li>
+                    <li><a href="#">Avalúos</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contacto rápido -->
+            <div class="footer__contact">
+                <h4>Contacto</h4>
+                <p>1(601) 497-7788</p>
+                <p>info@casaposibleusa.com</p>
+                <p>dinorah@hgroupms.com</p>
+                <p>Mississippi, USA</p>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2024 Casa Posible USA. Todos los derechos reservados.</p>
+                <p class="footer__partner">Partner de <a href="https://www.hgroupms.com/" target="_blank">Havar Real State Group</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

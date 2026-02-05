@@ -267,8 +267,8 @@ input, select, textarea {
 .header__logo,
 .footer__logo {
     display: flex;
-    align-items: baseline;
-    gap: var(--space-2);
+    align-items: center;
+    gap: var(--space-4);
     font-family: var(--font-heading);
     font-size: var(--text-xl);
     font-weight: 600;
@@ -285,7 +285,7 @@ input, select, textarea {
 
 /* Estilos para logo en imagen */
 .logo__image {
-    height: 65px;
+    height: 80px;
     width: auto;
     object-fit: contain;
     transition: transform var(--transition-fast);
@@ -1633,6 +1633,78 @@ input, select, textarea {
 }
 
 /* ==============================================
+   PARTNERS - Sección de colaboradores
+   ============================================== */
+.partners {
+    padding: var(--space-20) 0;
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-gray-100) 100%);
+}
+
+.partners__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-12);
+    margin-top: var(--space-16);
+}
+
+@media (min-width: 768px) {
+    .partners__grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+.partner-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-12);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    border: 1px solid rgba(26, 43, 60, 0.1);
+}
+
+.partner-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-accent);
+}
+
+.partner-card__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    margin-bottom: var(--space-8);
+    background: var(--color-gray-100);
+    border-radius: var(--radius-md);
+}
+
+.partner-card__logo {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transition: transform var(--transition-base), filter var(--transition-base);
+}
+
+.partner-card:hover .partner-card__logo {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 12px rgba(197, 160, 89, 0.2));
+}
+
+.partner-card__name {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+}
+
+.partner-card__description {
+    color: var(--color-gray-600);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+}
+
+/* ==============================================
    13. MEDIA QUERIES ADICIONALES
    ============================================== */
 
@@ -1661,3 +1733,4 @@ input, select, textarea {
     }
     */
 }
+/* Group for multiple logos in header - Removed */
